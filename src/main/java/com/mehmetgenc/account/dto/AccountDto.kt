@@ -8,6 +8,6 @@ data class AccountDto(
         val id: String?,
         val balance: BigDecimal?,
         val creationDate: LocalDateTime,
-        val customer: CustomerDto?,
+        val customer: AccountCustomerDto?,
         val transactions: Set<TransactionDto>?
 )
