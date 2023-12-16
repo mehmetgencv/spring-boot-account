@@ -7,6 +7,7 @@ import java.time.LocalDateTime
 
 @Entity
 data class Transaction(
+
         @Id
         @GeneratedValue(generator = "UUID")
         @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
@@ -15,14 +16,16 @@ data class Transaction(
         val amount: BigDecimal?,
         val transactionDate: LocalDateTime?,
 
-        @ManyToOne(fetch = FetchType.LAZY, optional = false, cascade = [CascadeType.ALL])
+        @ManyToOne(fetch = FetchType.LAZY, optional = false)
         @JoinColumn(name = "account_id", nullable = false)
         val account: Account
-){
-        constructor(amount: BigDecimal, account: Account) : this(
+
+) {
+
+        constructor(amount: BigDecimal, transactionDate: LocalDateTime, account: Account) : this(
                 id = null,
                 amount = amount,
-                transactionDate = LocalDateTime.now(),
+                transactionDate = transactionDate,
                 transactionType = TransactionType.INITIAL,
                 account = account
         )
@@ -51,7 +54,6 @@ data class Transaction(
         }
 }
 
-enum class TransactionType{
-        INITIAL,
-        TRANSFER
+enum class TransactionType {
+        INITIAL, TRANSFER
 }
