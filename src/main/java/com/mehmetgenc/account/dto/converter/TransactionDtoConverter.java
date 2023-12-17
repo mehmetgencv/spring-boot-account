@@ -1,5 +1,6 @@
-package com.mehmetgenc.account.dto;
+package com.mehmetgenc.account.dto.converter;
 
+import com.mehmetgenc.account.dto.TransactionDto;
 import com.mehmetgenc.account.model.Transaction;
 import org.springframework.stereotype.Component;
 

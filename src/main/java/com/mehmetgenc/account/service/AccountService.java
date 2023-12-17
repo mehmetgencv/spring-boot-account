@@ -1,7 +1,7 @@
 package com.mehmetgenc.account.service;
 
 import com.mehmetgenc.account.dto.AccountDto;
-import com.mehmetgenc.account.dto.AccountDtoConverter;
+import com.mehmetgenc.account.dto.converter.AccountDtoConverter;
 import com.mehmetgenc.account.dto.CreateAccountRequest;
 import com.mehmetgenc.account.model.Account;
 import com.mehmetgenc.account.model.Customer;

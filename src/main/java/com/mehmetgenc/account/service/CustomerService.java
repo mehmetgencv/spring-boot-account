@@ -1,7 +1,7 @@
 package com.mehmetgenc.account.service;
 
 import com.mehmetgenc.account.dto.CustomerDto;
-import com.mehmetgenc.account.dto.CustomerDtoConverter;
+import com.mehmetgenc.account.dto.converter.CustomerDtoConverter;
 import com.mehmetgenc.account.model.Customer;
 import com.mehmetgenc.account.repository.CustomerRepository;
 import com.mehmetgenc.account.exception.CustomerNotFoundException;

@@ -1,5 +1,7 @@
-package com.mehmetgenc.account.dto;
+package com.mehmetgenc.account.dto.converter;
 
+import com.mehmetgenc.account.dto.AccountCustomerDto;
+import com.mehmetgenc.account.dto.CustomerDto;
 import com.mehmetgenc.account.model.Customer;
 import org.springframework.stereotype.Component;
 
