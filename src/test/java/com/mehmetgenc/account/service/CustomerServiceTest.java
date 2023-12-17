@@ -1,12 +1,10 @@
 package com.mehmetgenc.account.service;
 
 import com.mehmetgenc.account.dto.CustomerDto;
-import com.mehmetgenc.account.dto.CustomerDtoConverter;
+import com.mehmetgenc.account.dto.converter.CustomerDtoConverter;
 import com.mehmetgenc.account.exception.CustomerNotFoundException;
 import com.mehmetgenc.account.model.Customer;
 import com.mehmetgenc.account.repository.CustomerRepository;
-import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
