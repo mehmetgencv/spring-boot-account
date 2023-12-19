@@ -1,4 +1,4 @@
-package com.mehmetgenc.account;
+package com.mehmetgenc.account.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @OpenAPIDefinition
 @Configuration
-public class configs {
+public class SwaggerConfig {
 
     @Bean
     public OpenAPI customOpenAPI(@Value("${application-description}") String description,
