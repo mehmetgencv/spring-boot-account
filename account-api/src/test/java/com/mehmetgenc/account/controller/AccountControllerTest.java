@@ -21,8 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = {
         "server-port=0",
-        "command.line.runner.enabled=false"
-})
+        "command.line.runner.enabled=false"})
 @RunWith(SpringRunner.class)
 @DirtiesContext
 class AccountControllerTest extends IntegrationTestSupport {

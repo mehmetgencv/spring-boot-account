@@ -38,7 +38,7 @@ class CustomerControllerTest extends IntegrationTestSupport {
                 customerRepository.getById(
                         Objects.requireNonNull(customer.getId())));
 
-        this.mockMvc.perform(get(CUSTOMER_API_ENDPOINT + customer.getId()))
+        this.mockMvc.perform(get(CUSTOMER_API_ENDPOINT + "/" +customer.getId()))
                 .andExpect(status().is2xxSuccessful())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(content().json(mapper.writer().withDefaultPrettyPrinter().writeValueAsString(expected), false))
