@@ -15,7 +15,6 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customOpenAPI(@Value("${application-description}") String description,
                                  @Value("${application-version}") String version){
-        System.out.println("sdsadasdasdasdasdasdasdasdasdas5d5asd5as5da5sd");
         return new OpenAPI()
                 .info(new Info()
                         .title("Account API")
