@@ -2,12 +2,19 @@ version: '3.9'
 
 services:
   app:
-    image: 'mehmetgencv/account-api:1.0'
+    build:
+      context: ./account-api
+      dockerfile: Dockerfile
+    image: 'mehmetgencv/account-api:1.0.0'
     container_name: account-api
     ports:
       - 8080:8080
+
   fe:
-    image: 'mehmetgencv/account-fe:1.0'
+    build:
+      context: ./account-fe
+      dockerfile: Dockerfile
+    image: 'mehmetgencv/account-fe:1.0.0'
     container_name: account-fe
     ports:
       - 3000:3000
