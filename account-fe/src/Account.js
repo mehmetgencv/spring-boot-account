@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {Component} from "react";
 import {Button, Form, FormGroup, Label, Input} from "reactstrap";
 
